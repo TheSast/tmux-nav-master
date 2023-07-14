@@ -4,6 +4,11 @@ Tmux Nav Master
 This plugin is *currently* an extended version of [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) made to complement [Astronvim's default keybindings](https://github.com/AstroNvim/astronvim.github.io/blob/37bbb0894b623eea49000b290b4ce645a97cc47e/docs/Basic%20Usage/mappings.md#general-mappings).  
 The goal is to eventually have a great, easy-to-set-up, largely non-intrusive plugin to help with navigation. For this very reason PRs are welcome!
 
+Preview
+-------
+
+![img/preview.gif](img/preview.gif)  
+
 Usage
 -----
 
