@@ -2,11 +2,12 @@
 
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|l?n?vim?x?)(diff)?$'" # credit to christoomey, raviqqe and leviticusnelson. See https://github.com/christoomey/vim-tmux-navigator/blob/master/vim-tmux-navigator.tmux
 is_fzf="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?fzf$'"
+is_lazygit="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?lazygit$'"
 
-tmux bind -n                C-h                    if "$is_vim"            "send C-h" "select-pane -L"
-tmux bind -n                C-j                    if "$is_vim || $is_fzf" "send C-j" "select-pane -D"
-tmux bind -n                C-k                    if "$is_vim || $is_fzf" "send C-k" "select-pane -U"
-tmux bind -n                C-l                    if "$is_vim"            "send C-l" "select-pane -R"
+tmux bind -n                C-h                    if "$is_vim"                           "send C-h" "select-pane -L"
+tmux bind -n                C-j                    if "$is_vim || $is_fzf" || $is_lazygit "send C-j" "select-pane -D"
+tmux bind -n                C-k                    if "$is_vim || $is_fzf" || $is_lazygit "send C-k" "select-pane -U"
+tmux bind -n                C-l                    if "$is_vim"                           "send C-l" "select-pane -R"
 
 tmux bind -r                C-h                    send C-h
 tmux bind -r                C-j                    send C-j
