@@ -45,6 +45,15 @@ set -g @plugin 'TheSast/tmux-nav-master'
 ```
 3. Install the plugin with <prefix>I, unless you changed `@tpm-install`, in which case you need to use the keybind you set.
 
+Other plugins
+-------------
+
+You might also like these plugins:
+
+  - [tmux-transient-status](https://github.com/TheSast/tmux-transient-status) - Automatically make your tmux status bar vanish when unneded. 
+
+  - [tmux-locker](https://github.com/TheSast/tmux-locker) - Lock away your tmux keybinds temporarely. 
+
 Licence
 -------
 
