@@ -52,7 +52,7 @@ You might also like these plugins:
 
   - [tmux-transient-status](https://github.com/TheSast/tmux-transient-status) - Automatically make your tmux status bar vanish when unneded. 
 
-  - [tmux-locker](https://github.com/TheSast/tmux-locker) - Lock away your tmux keybinds temporarely. 
+  - [tmux-keylocker](https://github.com/TheSast/tmux-keylocker) - Lock away your tmux keybinds temporarely. 
 
 Licence
 -------
